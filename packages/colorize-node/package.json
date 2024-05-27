@@ -1,0 +1,58 @@
+{
+  "name": "colorize-node",
+  "version": "1.0.0",
+  "description": "A lightweight library to color Node.js terminal output",
+  "keywords": [
+    "color",
+    "colorize",
+    "console",
+    "node",
+    "node.js",
+    "process",
+    "stdout",
+    "terminal"
+  ],
+  "homepage": "https://github.com/jrson83/ts-lib/tree/main/packages/colorize-node",
+  "bugs": {
+    "url": "https://github.com/jrson83/ts-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrson83/ts-lib.git",
+    "directory": "packages/colorize-node"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jörn Spangenberg",
+    "email": "github@jrson.me",
+    "url": "https://jrson.me"
+  },
+  "type": "module",
+  "exports": {
+    "require": {
+      "types": "./dist/index.d.cts",
+      "default": "./dist/index.cjs"
+    },
+    "import": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": ["dist"],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pkgroll --clean-dist --target=node18.12.0 --minify"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
