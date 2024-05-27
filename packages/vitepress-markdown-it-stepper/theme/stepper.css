@@ -1,0 +1,63 @@
+body {
+  counter-reset: section;
+}
+
+.stepper {
+  position: relative;
+  margin-left: -1rem;
+  padding: 0.375rem 0 1rem 3.5rem;
+  box-sizing: border-box;
+}
+
+.stepper-title {
+  color: var(--vp-c-text-1);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.stepper-content {
+  color: var(--vp-c-text-2);
+}
+
+.stepper-content::before {
+  counter-increment: section;
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: counter(section);
+  display: flex;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  max-width: 2.25rem;
+  height: 2.25rem;
+  max-height: 2.25rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 9999px;
+  border-color: var(--vp-c-divider);
+  background-color: var(--vp-c-bg-soft);
+}
+
+.stepper-content::after {
+  position: absolute;
+  z-index: -1;
+  left: 1.125rem;
+  top: 2.25rem;
+  content: "";
+  width: 2px;
+  height: calc(100% - 2.25rem);
+  background-color: var(--vp-c-divider);
+}
+
+.stepper-content:empty::after {
+  background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .stepper-content .vp-code-group {
+    margin-left: -3rem;
+  }
+}

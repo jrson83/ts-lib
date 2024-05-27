@@ -1,0 +1,167 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`vitepressPluginMarkdownItStepper > renders empty string 1`] = `""`;
+
+exports[`vitepressPluginMarkdownItStepper > renders multiple containers with & without titles 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+</div>
+</div>
+<div class='stepper'>
+<span class='stepper-title'>This is a title</span>
+<div class='stepper-content'>
+<p>Another paragraph</p>
+<ul>
+<li>Another list item #1</li>
+<li>Another list item #2</li>
+</ul>
+</div>
+</div>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders multiple containers with titles 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<span class='stepper-title'>This is a title</span>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+</div>
+</div>
+<div class='stepper'>
+<span class='stepper-title'>This is another title</span>
+<div class='stepper-content'>
+<p>Another paragraph</p>
+<ul>
+<li>Another list item #1</li>
+<li>Another list item #2</li>
+</ul>
+</div>
+</div>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders multiple containers without titles 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+</div>
+</div>
+<div class='stepper'>
+<div class='stepper-content'>
+<p>Another paragraph</p>
+<ul>
+<li>Another list item #1</li>
+<li>Another list item #2</li>
+</ul>
+</div>
+</div>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders nested containers with titles 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<span class='stepper-title'>This is a title</span>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+<div class='stepper'>
+<span class='stepper-title'>This is another title</span>
+<div class='stepper-content'>
+<p>Nested paragraph</p>
+<ul>
+<li>Nested list item #1</li>
+<li>Nested list item #2</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders nested containers without titles 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+<div class='stepper'>
+<div class='stepper-content'>
+<p>Nested paragraph</p>
+<ul>
+<li>Nested list item #1</li>
+<li>Nested list item #2</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders single container with title & custom options 1`] = `
+"<h1>Heading</h1>
+<section class='my-wrapper-class'>
+<div class='my-title-class'>This is a title</div>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+</div>
+</section>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders single container with title 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<span class='stepper-title'>This is a title</span>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+</div>
+</div>
+"
+`;
+
+exports[`vitepressPluginMarkdownItStepper > renders single container without title 1`] = `
+"<h1>Heading</h1>
+<div class='stepper'>
+<div class='stepper-content'>
+<p>Paragraph</p>
+<ul>
+<li>List item #1</li>
+<li>List item #2</li>
+</ul>
+</div>
+</div>
+"
+`;

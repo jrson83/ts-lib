@@ -1,0 +1,74 @@
+{
+  "name": "vitepress-markdown-it-stepper",
+  "version": "0.1.0",
+  "description": "Display content divided into a steps sequence",
+  "keywords": [
+    "container",
+    "markdown",
+    "markdown-it",
+    "markdown-it-plugin",
+    "stepper",
+    "steps",
+    "vitepress",
+    "vitepress-plugin"
+  ],
+  "homepage": "https://jrson.me",
+  "bugs": {
+    "url": "https://github.com/jrson83/ts-lib/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jrson83/ts-lib.git",
+    "directory": "packages/vitepress-markdown-it-stepper"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Jörn Spangenberg",
+    "email": "github@jrson.me",
+    "url": "https://jrson.me"
+  },
+  "type": "module",
+  "exports": {
+    ".": {
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      },
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      }
+    },
+    "./theme": "./theme/stepper.css"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.cts",
+  "files": ["dist", "theme"],
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "pkgroll --clean-dist --target=node18.12.0 --minify"
+  },
+  "dependencies": {
+    "@types/markdown-it": "14.1.1",
+    "@types/markdown-it-container": "^2.0.10",
+    "markdown-it-container": "^4.0.0"
+  },
+  "devDependencies": {
+    "markdown-it": "14.1.0"
+  },
+  "peerDependencies": {
+    "markdown-it": "^14.1.0"
+  },
+  "peerDependenciesMeta": {
+    "markdown-it": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
