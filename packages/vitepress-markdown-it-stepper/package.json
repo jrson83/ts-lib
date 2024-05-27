@@ -12,7 +12,7 @@
     "vitepress",
     "vitepress-plugin"
   ],
-  "homepage": "https://jrson.me",
+  "homepage": "https://github.com/jrson83/ts-lib/tree/main/packages/vitepress-markdown-it-stepper",
   "bugs": {
     "url": "https://github.com/jrson83/ts-lib/issues"
   },
