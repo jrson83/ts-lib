@@ -227,4 +227,4 @@ The additional interface `MarkdownItStepperOptions` is exported.
 
 ## License
 
-Licensed under the [MIT license](https://github.com/jrson83/ts-lib/blob/main/packages/vitepress-plugin-stepper/LICENSE).
+Licensed under the [MIT license](https://github.com/jrson83/ts-lib/blob/main/packages/vitepress-markdown-it-stepper/LICENSE).
