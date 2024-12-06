@@ -47,7 +47,7 @@
     "build": "pkgroll --clean-dist --target=node18.12.0 --minify"
   },
   "devDependencies": {
-    "@types/node": "^20.11.30"
+    "@types/node": "^22.10.1"
   },
   "engines": {
     "node": ">=18.12.0"
