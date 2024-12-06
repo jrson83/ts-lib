@@ -22,7 +22,7 @@
     "reinstall": "pnpm run clean:modules && pnpm install",
     "clean": "pnpm --stream --recursive clean",
     "clean:modules": "node ./.scripts/clean-modules.mjs",
-    "lint": "biome lint --apply .",
+    "lint": "biome lint --write .",
     "fmt": "biome format . --write",
     "build": "pnpm --stream --recursive build",
     "test": "NODE_OPTIONS=\"--no-deprecation\" vitest",
@@ -46,7 +46,7 @@
     "pnpm": ">=9.15.0"
   },
   "nano-staged": {
-    "*.ts": "biome check --apply .",
+    "*.ts": "biome lint --write .",
     "*": "biome format . --write"
   },
   "packageManager": "pnpm@9.15.0"
