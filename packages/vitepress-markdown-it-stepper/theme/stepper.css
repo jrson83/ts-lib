@@ -56,7 +56,6 @@ body {
 }
 
 @media only screen and (max-width: 768px) {
-
   .stepper-content .vp-code-group {
     margin-left: -3rem;
   }
