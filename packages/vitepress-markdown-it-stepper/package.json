@@ -1,6 +1,6 @@
 {
   "name": "vitepress-markdown-it-stepper",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Display content divided into a steps sequence",
   "keywords": [
     "container",
