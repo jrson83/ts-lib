@@ -45,7 +45,7 @@ importers:
   packages/vitepress-markdown-it-stepper:
     dependencies:
       '@types/markdown-it':
-        specifier: 14.1.1
+        specifier: 14.1.2
         version: 14.1.2
       '@types/markdown-it-container':
         specifier: ^2.0.10
