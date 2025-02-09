@@ -25,13 +25,13 @@ importers:
         version: 0.8.0
       pkgroll:
         specifier: ^2.5.1
-        version: 2.5.1(typescript@5.7.2)
+        version: 2.5.1(typescript@5.7.3)
       tsx:
         specifier: ^4.19.2
         version: 4.19.2
       typescript:
-        specifier: ^5.7.2
-        version: 5.7.2
+        specifier: ^5.7.3
+        version: 5.7.3
       vitest:
         specifier: ^2.1.8
         version: 2.1.8(@types/node@22.13.1)
@@ -1064,8 +1064,8 @@ packages:
     engines: {node: '>=18.0.0'}
     hasBin: true
 
-  typescript@5.7.2:
-    resolution: {integrity: sha512-i5t66RHxDvVN40HfDd1PsEThGNnlMCMT3jMUuoh9/0TaqWevNontacunWyN02LA9/fIbEWlcHZcgTKb9QoaLfg==}
+  typescript@5.7.3:
+    resolution: {integrity: sha512-84MVSjMEHP+FQRPy3pX9sTVV/INIex71s9TL2Gm5FG/WG1SqXeKyZ0k7/blY/4FdOzI12CBy1vGc4og/eus0fw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
@@ -1846,7 +1846,7 @@ snapshots:
 
   picomatch@4.0.2: {}
 
-  pkgroll@2.5.1(typescript@5.7.2):
+  pkgroll@2.5.1(typescript@5.7.3):
     dependencies:
       '@rollup/plugin-alias': 5.1.1(rollup@4.28.1)
       '@rollup/plugin-commonjs': 26.0.3(rollup@4.28.1)
@@ -1859,7 +1859,7 @@ snapshots:
       magic-string: 0.30.14
       rollup: 4.28.1
     optionalDependencies:
-      typescript: 5.7.2
+      typescript: 5.7.3
 
   postcss@8.4.49:
     dependencies:
@@ -1981,7 +1981,7 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  typescript@5.7.2: {}
+  typescript@5.7.3: {}
 
   uc.micro@2.1.0: {}
 
